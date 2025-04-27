@@ -740,3 +740,48 @@ footer {
         display: none;
     }
 }
+
+/* Add these styles to your existing CSS file */
+
+/* Terms Section - Mobile Optimizations */
+@media (max-width: 768px) {
+    .terms-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .term-content {
+        gap: 1rem;
+    }
+    
+    .term-item {
+        padding: 1rem;
+    }
+    
+    .term-item h3 {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+    
+    .term-item ul {
+        margin-left: 1rem;
+    }
+    
+    .term-item ul li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .payment-info {
+        padding: 1.5rem;
+    }
+    
+    .payment-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .payment-info p {
+        font-size: 0.95rem;
+    }
+}
+
