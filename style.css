@@ -1017,23 +1017,4 @@ footer {
     animation-delay: 0.6s;
 }
 
-@media (max-width: 768px) {
-  .logo-container {
-    flex-wrap: wrap;
-    gap: 0;
-    max-width: 200px; /* Adjust based on your logo width */
-  }
-  
-  .logo-text {
-    font-size: 1.2rem;
-    white-space: normal;
-    line-height: 1.2;
-    margin-top: 4px;
-    width: 100%;
-  }
-  
-  /* Optional: Reduce logo size if needed */
-  .logo-container img {
-    height: 40px;
-  }
-}
+
