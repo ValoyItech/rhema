@@ -1040,3 +1040,56 @@ footer {
         object-fit: contain; /* Ensure images fit within container without stretching */
     }
 }
+
+
+
+/* Add this to your style.css */
+@media (max-width: 768px) {
+    /* Hero Section Adjustments */
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Center text horizontally */
+        position: relative;
+    }
+
+    .slide {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center content both horizontally and vertically */
+        max-width: 80%;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        z-index: 10;
+    }
+
+    .slide-content h1 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .hero-buttons {
+        position: absolute;
+        bottom: 50px; /* Position buttons at the bottom */
+        left: 50%;
+        transform: translateX(-50%); /* Center buttons horizontally */
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Add space between buttons */
+    }
+
+    .hero-buttons .btn-apply,
+    .hero-buttons .btn-contact {
+        width: 100%; /* Make buttons full width */
+        text-align: center; /* Center button text */
+    }
+}
