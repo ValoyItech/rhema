@@ -1018,3 +1018,25 @@ footer {
 }
 
 
+
+
+/* Add this to your style.css */
+@media (max-width: 768px) {
+    /* Portrait Gallery Section */
+    .gallery-section.portrait {
+        height: auto; /* Allow natural height */
+        min-height: 600px; /* Minimum height to ensure content isn't cut off */
+    }
+
+    /* Landscape Gallery Section */
+    .gallery-section.landscape {
+        height: 300px; /* Keep the original height for landscape images */
+    }
+
+    /* Gallery Image Styling */
+    .gallery-section img {
+        width: 100%;
+        height: auto; /* Ensure images scale properly */
+        object-fit: contain; /* Ensure images fit within container without stretching */
+    }
+}
