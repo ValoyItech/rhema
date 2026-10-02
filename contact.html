@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact Us | Rhema Funeral Services</title>
+  <meta name="description" content="Contact Rhema Funeral Services for funeral plan enquiries, support, banking details, downloadable forms, and location information." />
+  <meta name="keywords" content="Rhema Funeral Services contact, funeral enquiries, funeral plans, banking details, application form, Malamulele" />
+  <meta name="author" content="Rhema Funeral Services" />
+
+  <meta property="og:title" content="Contact Us | Rhema Funeral Services" />
+  <meta property="og:description" content="Get in touch with Rhema Funeral Services for compassionate funeral support and plan enquiries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#0b4dbb;
+      --primary-dark:#083785;
+      --primary-soft:#eaf2ff;
+      --secondary:#1b74e4;
+      --accent:#ffffff;
+      --dark:#0d1726;
+      --text:#324054;
+      --muted:#6b7a90;
+      --line:#dbe5f3;
+      --bg:#f7faff;
+      --white:#ffffff;
+      --shadow:0 18px 50px rgba(8, 28, 68, 0.10);
+      --radius:20px;
+      --radius-sm:14px;
+      --container:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    body.menu-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{width:min(92%, var(--container));margin:0 auto}
+    .section{padding:90px 0}
+
+    .section-title{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 50px;
+    }
+    .section-title .eyebrow,
+    .eyebrow{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+    .section-title h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2rem,4vw,3.3rem);
+      line-height:1.1;
+      color:var(--dark);
+      margin-bottom:16px;
+    }
+    .section-title p{
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 24px;
+      border:none;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:700;
+      transition:.3s ease;
+      font-size:.98rem;
+    }
+    .btn-primary{
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      color:#fff;
+      box-shadow:0 12px 30px rgba(11,77,187,.24);
+    }
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-light{
+      background:#fff;
+      color:var(--primary);
+      box-shadow:var(--shadow);
+    }
+    .btn-light:hover{transform:translateY(-2px)}
+    .btn-full{width:100%}
+
+    /* Header */
+    header{
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:1100;
+      transition:transform .35s ease;
+    }
+    header.header-hidden{
+      transform:translateY(-120%);
+    }
+
+    .nav-wrap{
+      width:min(94%, 1280px);
+      margin:18px auto 0;
+      padding:14px 18px;
+      border-radius:22px;
+      background:rgba(255,255,255,.78);
+      backdrop-filter:blur(16px);
+      border:1px solid rgba(255,255,255,.6);
+      box-shadow:0 10px 34px rgba(10,20,40,.08);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      transition:.3s ease;
+    }
+
+    header.scrolled .nav-wrap{
+      margin-top:10px;
+      box-shadow:0 16px 40px rgba(10,20,40,.14);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand img{
+      width:48px;
+      height:48px;
+      object-fit:contain;
+      border-radius:12px;
+      background:#fff;
+      padding:4px;
+    }
+    .brand-text{min-width:0}
+    .brand-text strong{
+      display:block;
+      font-size:1rem;
+      color:var(--dark);
+      line-height:1.1;
+    }
+    .brand-text span{
+      display:block;
+      font-size:.82rem;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    nav ul{
+      display:flex;
+      align-items:center;
+      gap:26px;
+    }
+    nav a{
+      font-weight:700;
+      font-size:.96rem;
+      color:#1b2940;
+      position:relative;
+    }
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-8px;
+      width:0;height:2px;
+      background:var(--primary);
+      transition:.3s ease;
+    }
+    nav a:hover::after,
+    nav a.active::after{width:100%}
+
+    .nav-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .nav-wa{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:11px 16px;
+      border-radius:999px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:800;
+      font-size:.92rem;
+    }
+    .hamburger{
+      display:none;
+      width:48px;
+      height:48px;
+      border:none;
+      border-radius:14px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-size:1.2rem;
+      cursor:pointer;
+    }
+
+    @media (max-width: 860px){
+      header{top:0}
+      .nav-wrap{
+        width:100%;
+        margin:0;
+        border-radius:0 0 22px 22px;
+        padding:12px 14px;
+      }
+      nav{display:none}
+      .hamburger{display:inline-grid;place-items:center}
+      .nav-actions .nav-wa{display:none}
+    }
+
+    /* Mobile sidebar */
+    .sidebar-overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(3,10,24,.52);
+      backdrop-filter:blur(4px);
+      z-index:1190;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s ease;
+    }
+    .sidebar-overlay.active{
+      opacity:1;
+      visibility:visible;
+    }
+
+    .mobile-sidebar{
+      position:fixed;
+      top:0;
+      right:0;
+      width:min(88vw,380px);
+      height:100vh;
+      background:linear-gradient(180deg,#0b1730 0%, #0d2556 100%);
+      color:#fff;
+      z-index:1200;
+      transform:translateX(100%);
+      transition:transform .35s ease;
+      box-shadow:-20px 0 50px rgba(0,0,0,.22);
+      display:flex;
+      flex-direction:column;
+      overflow-y:auto;
+    }
+    .mobile-sidebar.open{transform:translateX(0)}
+    .sidebar-top{
+      padding:22px 20px 16px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .sidebar-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .sidebar-brand img{
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      background:#fff;
+      padding:4px;
+    }
+    .sidebar-brand strong{
+      display:block;
+      font-size:.98rem;
+    }
+    .sidebar-brand span{
+      display:block;
+      font-size:.8rem;
+      color:rgba(255,255,255,.72);
+    }
+    .sidebar-close{
+      width:42px;
+      height:42px;
+      border:none;
+      border-radius:12px;
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      font-size:1.1rem;
+      cursor:pointer;
+    }
+    .sidebar-body{
+      padding:20px;
+      display:grid;
+      gap:22px;
+    }
+    .sidebar-nav{
+      display:grid;
+      gap:10px;
+    }
+    .sidebar-nav a{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      color:#fff;
+      font-weight:700;
+      transition:.25s ease;
+    }
+    .sidebar-nav a:hover{
+      background:rgba(255,255,255,.12);
+      transform:translateX(4px);
+    }
+    .sidebar-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:22px;
+      padding:18px;
+    }
+    .sidebar-card h4{
+      font-size:1rem;
+      margin-bottom:12px;
+    }
+    .sidebar-card p,
+    .sidebar-card a,
+    .sidebar-card li{
+      color:rgba(255,255,255,.82);
+      font-size:.93rem;
+    }
+    .sidebar-contact{
+      display:grid;
+      gap:12px;
+    }
+    .sidebar-contact a,
+    .sidebar-contact div{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+    }
+    .sidebar-contact i{
+      color:#9fc6ff;
+      margin-top:4px;
+    }
+    .sidebar-socials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+    .sidebar-socials a{
+      width:42px;
+      height:42px;
+      display:grid;
+      place-items:center;
+      border-radius:12px;
+      background:rgba(255,255,255,.1);
+      color:#fff;
+    }
+    .sidebar-cta{
+      display:grid;
+      gap:12px;
+    }
+
+    /* Hero */
+    .page-hero{
+      position:relative;
+      padding:170px 0 110px;
+      color:#fff;
+      background:
+        linear-gradient(120deg, rgba(4,18,45,.86), rgba(11,77,187,.58)),
+        url('images/banner.jpeg') center/cover no-repeat;
+      overflow:hidden;
+    }
+    .page-hero::after{
+      content:"";
+      position:absolute;
+      left:-80px;
+      bottom:-120px;
+      width:340px;
+      height:340px;
+      background:radial-gradient(circle, rgba(255,255,255,.18), transparent 70%);
+      filter:blur(10px);
+    }
+    .page-hero-content{
+      position:relative;
+      z-index:2;
+      max-width:860px;
+    }
+    .page-hero .eyebrow{
+      background:rgba(255,255,255,.14);
+      color:#fff;
+    }
+    .page-hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.7rem,5vw,4.8rem);
+      line-height:1.02;
+      margin-bottom:18px;
+    }
+    .page-hero p{
+      font-size:1.08rem;
+      color:rgba(255,255,255,.88);
+      max-width:760px;
+    }
+
+    /* Contact cards */
+    .contact-overview{
+      background:linear-gradient(180deg,#f8fbff 0%, #eef5ff 100%);
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:26px;
+      align-items:start;
+    }
+    .contact-card,
+    .form-card{
+      background:#fff;
+      border:1px solid #eef3fb;
+      border-radius:26px;
+      padding:28px;
+      box-shadow:var(--shadow);
+    }
+    .contact-card h3,
+    .form-card h3{
+      font-size:1.45rem;
+      color:var(--dark);
+      margin-bottom:14px;
+    }
+    .contact-card p,
+    .form-card p{
+      color:var(--muted);
+      margin-bottom:18px;
+    }
+    .contact-list{
+      display:grid;
+      gap:14px;
+      margin-bottom:18px;
+    }
+    .contact-list li{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      color:var(--text);
+    }
+    .contact-list i{
+      width:42px;height:42px;
+      display:grid;place-items:center;
+      background:var(--primary-soft);
+      border-radius:14px;
+      color:var(--primary);
+      flex-shrink:0;
+      margin-top:2px;
+    }
+    .socials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+    .socials a{
+      width:44px;height:44px;
+      display:grid;place-items:center;
+      border-radius:14px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      transition:.3s ease;
+    }
+    .socials a:hover{
+      transform:translateY(-3px);
+      background:#dceaff;
+    }
+
+    .form-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    .form-group{margin-bottom:14px}
+    .form-group.full{grid-column:1 / -1}
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-size:.92rem;
+      font-weight:700;
+      color:var(--dark);
+    }
+    input, select, textarea{
+      width:100%;
+      padding:14px 16px;
+      border-radius:16px;
+      border:1px solid #dbe5f3;
+      background:#fff;
+      color:#17253b;
+      font:inherit;
+      outline:none;
+      transition:border-color .2s ease, box-shadow .2s ease;
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color:#8db8ff;
+      box-shadow:0 0 0 4px rgba(11,77,187,.08);
+    }
+    textarea{min-height:150px;resize:vertical}
+    .form-note{
+      color:var(--muted);
+      font-size:.9rem;
+      margin-top:12px;
+    }
+
+    /* Support cards */
+    .support-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+    .support-card{
+      background:#fff;
+      border:1px solid #edf2fb;
+      border-radius:22px;
+      padding:24px;
+      box-shadow:0 10px 25px rgba(10,30,70,.05);
+      transition:.3s ease;
+    }
+    .support-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 16px 34px rgba(10,30,70,.10);
+    }
+    .support-card i{
+      width:56px;height:56px;
+      display:grid;place-items:center;
+      border-radius:16px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      margin-bottom:16px;
+      font-size:1.2rem;
+    }
+    .support-card h3{
+      color:var(--dark);
+      font-size:1.05rem;
+      margin-bottom:8px;
+    }
+    .support-card p{
+      color:var(--muted);
+      font-size:.94rem;
+      margin-bottom:16px;
+    }
+
+    /* Banking + downloads */
+    .details-section{
+      background:#fff;
+    }
+    .details-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+      align-items:start;
+    }
+    .detail-box{
+      background:linear-gradient(180deg,#f8fbff 0%, #f2f7ff 100%);
+      border:1px solid #e7effc;
+      border-radius:26px;
+      padding:28px;
+      box-shadow:0 10px 26px rgba(10,30,70,.06);
+    }
+    .detail-box h3{
+      color:var(--dark);
+      font-size:1.4rem;
+      margin-bottom:14px;
+    }
+    .detail-list{
+      display:grid;
+      gap:12px;
+    }
+    .detail-list li{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      color:var(--text);
+    }
+    .detail-list i{
+      color:var(--primary);
+      margin-top:4px;
+    }
+    .download-card{
+      display:flex;
+      align-items:flex-start;
+      gap:16px;
+      background:#fff;
+      border:1px solid #e7effc;
+      border-radius:22px;
+      padding:20px;
+      margin-top:18px;
+    }
+    .download-card i{
+      width:54px;
+      height:54px;
+      display:grid;
+      place-items:center;
+      border-radius:16px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-size:1.3rem;
+      flex-shrink:0;
+    }
+    .download-card h4{
+      color:var(--dark);
+      margin-bottom:6px;
+      font-size:1.02rem;
+    }
+    .download-card p{
+      color:var(--muted);
+      margin-bottom:12px;
+      font-size:.94rem;
+    }
+
+    /* Map */
+    .map-section{
+      position:relative;
+      color:#fff;
+      background:
+        linear-gradient(120deg, rgba(9,24,61,.90), rgba(11,77,187,.76)),
+        url('images/services-bg.jpg') center/cover no-repeat;
+    }
+    .map-wrap{
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .map-card,
+    .map-frame{
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(12px);
+      border-radius:26px;
+      overflow:hidden;
+    }
+    .map-card{
+      padding:28px;
+    }
+    .map-card h3{
+      font-size:1.45rem;
+      margin-bottom:14px;
+    }
+    .map-card p{
+      color:rgba(255,255,255,.86);
+      margin-bottom:18px;
+    }
+    .map-frame iframe{
+      width:100%;
+      height:100%;
+      min-height:420px;
+      border:0;
+      display:block;
+    }
+
+    /* Footer */
+    footer{
+      background:#081529;
+      color:#fff;
+      padding:70px 0 26px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr .8fr 1fr;
+      gap:28px;
+      padding-bottom:34px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .footer-brand{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+    }
+    .footer-brand img{
+      width:60px;height:60px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:16px;
+      padding:6px;
+    }
+    .footer-brand h3{
+      font-size:1.25rem;
+      margin-bottom:8px;
+    }
+    .footer-brand p{
+      color:rgba(255,255,255,.72);
+      font-size:.94rem;
+      max-width:360px;
+    }
+    .footer-col h4{
+      font-size:1rem;
+      margin-bottom:14px;
+      color:#fff;
+    }
+    .footer-col ul{
+      display:grid;
+      gap:10px;
+    }
+    .footer-col a{
+      color:rgba(255,255,255,.74);
+      transition:.3s ease;
+    }
+    .footer-col a:hover{color:#fff}
+    .footer-contact li{
+      color:rgba(255,255,255,.74);
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .footer-contact i{
+      color:#8ab8ff;
+      margin-top:4px;
+    }
+    .footer-bottom{
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      color:rgba(255,255,255,.62);
+      font-size:.92rem;
+    }
+    .footer-bottom a{color:#9dc4ff}
+
+    /* Floating WhatsApp */
+    .floating-wa{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#25D366;
+      color:#fff;
+      font-size:1.5rem;
+      box-shadow:0 12px 28px rgba(0,0,0,.22);
+    }
+
+    /* Responsive */
+    @media (max-width: 1080px){
+      .contact-grid,
+      .details-grid,
+      .map-wrap,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+      .support-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width: 860px){
+      .page-hero{
+        padding:145px 0 90px;
+      }
+      .form-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 640px){
+      .section{padding:74px 0}
+      .nav-wrap{padding:12px 14px}
+      .brand-text span{display:none}
+      .mobile-sidebar{width:min(92vw,380px)}
+      .page-hero h1{
+        font-size:clamp(2.1rem,9vw,3.2rem);
+      }
+      .support-grid{
+        grid-template-columns:1fr;
+      }
+      .footer-bottom{
+        flex-direction:column;
+      }
+    }
+
+    .map-card .contact-list li,
+.map-card .contact-list strong,
+.map-card .contact-list div{
+  color:#fff;
+}
+
+.map-card .contact-list div{
+  color:rgba(255,255,255,.88);
+}
+
+.quick-support-section{
+  position:relative;
+  background:
+    linear-gradient(120deg, rgba(7,24,56,.88), rgba(11,77,187,.72)),
+    url('images/contact.jpeg') center/cover no-repeat;
+}
+
+.quick-support-section .section-title h2{
+  color:#fff;
+}
+
+.quick-support-section .section-title p{
+  color:rgba(255,255,255,.86);
+}
+
+.quick-support-section .eyebrow{
+  background:rgba(255,255,255,.14);
+  color:#fff;
+}
+
+.quick-support-section .support-card{
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow:0 14px 34px rgba(0,0,0,.12);
+}
+
+@media (max-width: 768px){
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-col:first-child{
+    grid-column: span 2;
+  }
+
+  .footer-col:last-child{
+    grid-column: span 2;
+  }
+
+}
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+        <div class="brand-text">
+          <strong>Rhema Funeral Services</strong>
+          <span>Compassionate funeral care with dignity</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="index.html#plans">Plans</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="nav-wa" href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire.">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-brand">
+        <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+        <div>
+          <strong>Rhema Funeral Services</strong>
+          <span>Dignity. Care. Respect.</span>
+        </div>
+      </div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-body">
+      <div class="sidebar-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-users"></i> About</a>
+        <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a href="index.html#plans"><i class="fa-solid fa-file-signature"></i> Funeral Plans</a>
+        <a href="index.html#services"><i class="fa-solid fa-briefcase"></i> Services</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Contact Links</h4>
+        <div class="sidebar-contact">
+          <a href="tel:+27833394013"><i class="fa-solid fa-phone"></i><span>083 339 4013</span></a>
+          <a href="tel:+27721015385"><i class="fa-solid fa-phone"></i><span>072 101 5385</span></a>
+          <a href="mailto:info@rhemafunerals.co.za"><i class="fa-solid fa-envelope"></i><span>info@rhemafunerals.co.za</span></a>
+          <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire." target="_blank">
+            <i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="sidebar-socials">
+          <a href="https://www.facebook.com/share/16VTcPFeRb/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@rhema_funeral_services?_t=ZM-8vrCMRRxwLG&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/watch?v=uZxoAJQATSY&ab_channel=RMGVIDEOS" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Need Help Fast?</h4>
+        <p>Get immediate assistance and send your funeral plan or enquiry directly to WhatsApp.</p>
+        <div class="sidebar-cta" style="margin-top:14px;">
+          <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20need%20urgent%20assistance." target="_blank" class="btn btn-light">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="eyebrow">Contact Us</span>
+          <h1>We are here to support your family with care and dignity.</h1>
+          <p>
+            Reach out to Rhema Funeral Services for funeral plan enquiries, support, payment details, downloadable forms, and assistance with funeral arrangements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-overview">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Contact Information</h3>
+          <p>Speak with us for funeral plans, urgent support, family assistance, or general enquiries.</p>
+
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong><br>
+                083 339 4013 / 072 101 5385<br>
+                073 991 2256 / 073 111 9764
+              </div>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong><br>
+                info@rhemafunerals.co.za
+              </div>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Address</strong><br>
+                809 Phaphazela, Malamulele, 0982
+              </div>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Support</strong><br>
+                Contact us for funeral assistance and plan enquiries
+              </div>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/share/16VTcPFeRb/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@rhema_funeral_services?_t=ZM-8vrCMRRxwLG&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/watch?v=uZxoAJQATSY&ab_channel=RMGVIDEOS" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/27833394013" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Send an Enquiry</h3>
+          <p>Complete the form below and it will open WhatsApp with your message ready to send.</p>
+
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email address">
+              </div>
+
+              <div class="form-group">
+                <label for="plan">Select Enquiry Type</label>
+                <select id="plan" name="plan" required>
+                  <option value="">Choose an option</option>
+                  <option value="Plan A - R150 per month">Plan A - R150 per month</option>
+                  <option value="Plan B - R200 per month">Plan B - R200 per month</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                  <option value="Funeral Arrangement Support">Funeral Arrangement Support</option>
+                  <option value="Application Form Request">Application Form Request</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+              </div>
+
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary btn-full">
+                  <i class="fab fa-whatsapp"></i> Send to WhatsApp
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <p class="form-note">
+            When you submit this form, it will open WhatsApp and send your enquiry to +27 83 339 4013.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quick-support-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Quick Support</span>
+      <h2>Helpful contact options for families and members</h2>
+      <p>
+        Choose the option that best fits your needs, whether you need urgent help, plan information, or application support.
+      </p>
+    </div>
+
+    <div class="support-grid">
+      <div class="support-card">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Urgent Assistance</h3>
+        <p>Reach out quickly if your family needs immediate support and funeral arrangement guidance.</p>
+        <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20need%20urgent%20assistance." target="_blank" class="btn btn-primary">Get Help</a>
+      </div>
+
+      <div class="support-card">
+        <i class="fa-solid fa-file-signature"></i>
+        <h3>Plan Enquiries</h3>
+        <p>Ask about available funeral plans, premiums, benefits, and how to apply.</p>
+        <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire%20about%20your%20funeral%20plans." target="_blank" class="btn btn-primary">Ask About Plans</a>
+      </div>
+
+      <div class="support-card">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <h3>Application Form</h3>
+        <p>Download the application form and complete it at your convenience.</p>
+        <a href="application.pdf" download class="btn btn-primary">Download Form</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section details-section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Payment & Forms</span>
+          <h2>Banking details and downloadable application form</h2>
+          <p>
+            Use the information below for payments and access the application form for membership or plan registration.
+          </p>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-box">
+            <h3>Payment Details</h3>
+            <ul class="detail-list">
+              <li><i class="fa-solid fa-building-columns"></i><span><strong>Bank:</strong> FNB (First National Bank)</span></li>
+              <li><i class="fa-solid fa-user"></i><span><strong>Account Name:</strong> Rhema Funeral Services</span></li>
+              <li><i class="fa-solid fa-credit-card"></i><span><strong>Account Number:</strong> 63039230080</span></li>
+              <li><i class="fa-solid fa-code-branch"></i><span><strong>Branch Code:</strong> 250655</span></li>
+            </ul>
+          </div>
+
+          <div class="detail-box">
+            <h3>Application Form Download</h3>
+            <p style="color:var(--muted); margin-bottom:8px;">
+              Download the official application form and complete it before submission.
+            </p>
+
+            <div class="download-card">
+              <i class="fa-solid fa-file-pdf"></i>
+              <div>
+                <h4>Application Form</h4>
+                <p>Download the PDF form for plan registration or membership application.</p>
+                <a href="application.pdf" download class="btn btn-primary">
+                  <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow" style="background:rgba(255,255,255,.14); color:#fff;">Our Location</span>
+          <h2 style="color:#fff;">Visit us or find us on the map</h2>
+          <p style="color:rgba(255,255,255,.86);">
+            Locate Rhema Funeral Services easily and contact us for support, funeral arrangements, or plan enquiries.
+          </p>
+        </div>
+
+        <div class="map-wrap">
+          <div class="map-card">
+            <h3>Visit Rhema Funeral Services</h3>
+            <p>
+              We welcome families and community members who need funeral support, enquiries, or help with applications and payments.
+            </p>
+
+            <ul class="contact-list" style="margin-bottom:0;">
+              <li>
+                <i class="fa-solid fa-location-dot" style="background:rgba(255,255,255,.14); color:#fff;"></i>
+                <div>
+                  <strong>Address</strong><br>
+                  809 Phaphazela, Malamulele, 0982
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone" style="background:rgba(255,255,255,.14); color:#fff;"></i>
+                <div>
+                  <strong>Call Us</strong><br>
+                  083 339 4013 / 072 101 5385
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope" style="background:rgba(255,255,255,.14); color:#fff;"></i>
+                <div>
+                  <strong>Email</strong><br>
+                  info@rhemafunerals.co.za
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.8407234344936!2d30.540665174848275!3d-23.066300243590444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec5b7789257d025%3A0x49a5e3c5d47ce41b!2sRhema%20funeral%20services!5e0!3m2!1sen!2sza!4v1773488795226!5m2!1sen!2sza"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Rhema Funeral Services Map">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+            <div>
+              <h3>Rhema Funeral Services</h3>
+              <p>
+                Compassionate, dignified, and affordable funeral support for families and communities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Plans</h4>
+          <ul>
+            <li><a href="index.html#plans">Plan A</a></li>
+            <li><a href="index.html#plans">Plan B</a></li>
+            <li><a href="application.pdf" download>Application Form</a></li>
+            <li><a href="index.html#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i><span>083 339 4013</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>info@rhemafunerals.co.za</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>809 Phaphazela, Malamulele, 0982</span></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/27833394013" target="_blank">Chat on WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rhema Funeral Services. All rights reserved.</p>
+        <p>Website by <a href="https://www.valoyitech.co.za/" target="_blank">Valoyitech</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa"
+     href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire."
+     target="_blank"
+     aria-label="WhatsApp Rhema Funeral Services">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const whatsappNumber = "27833394013";
+
+    function openWhatsApp(message) {
+      const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+      window.open(url, "_blank");
+    }
+
+    const header = document.getElementById("header");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+
+      if (currentScroll > 120) {
+        if (currentScroll > lastScrollTop) {
+          header.classList.add("header-hidden");
+        } else {
+          header.classList.remove("header-hidden");
+        }
+      } else {
+        header.classList.remove("header-hidden");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const mobileSidebar = document.getElementById("mobileSidebar");
+    const sidebarOverlay = document.getElementById("sidebarOverlay");
+    const sidebarClose = document.getElementById("sidebarClose");
+
+    function openSidebar() {
+      mobileSidebar.classList.add("open");
+      sidebarOverlay.classList.add("active");
+      document.body.classList.add("menu-open");
+    }
+
+    function closeSidebar() {
+      mobileSidebar.classList.remove("open");
+      sidebarOverlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
+
+    hamburger.addEventListener("click", openSidebar);
+    sidebarClose.addEventListener("click", closeSidebar);
+    sidebarOverlay.addEventListener("click", closeSidebar);
+
+    document.querySelectorAll(".mobile-sidebar a").forEach(link => {
+      link.addEventListener("click", closeSidebar);
+    });
+
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const plan = document.getElementById("plan").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const whatsappMessage =
+`Hello Rhema Funeral Services,
+
+My name is ${name}.
+Phone: ${phone}
+Email: ${email ? email : "Not provided"}
+Enquiry Type: ${plan}
+
+Message:
+${message}`;
+
+      openWhatsApp(whatsappMessage);
+    });
+  </script>
+</body>
+</html>

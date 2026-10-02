@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gallery | Rhema Funeral Services</title>
+  <meta name="description" content="View the Rhema Funeral Services gallery showcasing respectful funeral presentation, setup, and memorable service highlights." />
+  <meta name="keywords" content="Rhema Funeral Services gallery, funeral setup, memorial presentation, funeral service images" />
+  <meta name="author" content="Rhema Funeral Services" />
+
+  <meta property="og:title" content="Gallery | Rhema Funeral Services" />
+  <meta property="og:description" content="A respectful look at our presentation, service, and funeral arrangements." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#0b4dbb;
+      --primary-dark:#083785;
+      --primary-soft:#eaf2ff;
+      --secondary:#1b74e4;
+      --accent:#ffffff;
+      --dark:#0d1726;
+      --text:#324054;
+      --muted:#6b7a90;
+      --line:#dbe5f3;
+      --bg:#f7faff;
+      --white:#ffffff;
+      --shadow:0 18px 50px rgba(8, 28, 68, 0.10);
+      --radius:20px;
+      --radius-sm:14px;
+      --container:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    body.menu-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{width:min(92%, var(--container));margin:0 auto}
+    .section{padding:90px 0}
+
+    .section-title{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 50px;
+    }
+    .section-title .eyebrow,
+    .eyebrow{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+    .section-title h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2rem,4vw,3.3rem);
+      line-height:1.1;
+      color:var(--dark);
+      margin-bottom:16px;
+    }
+    .section-title p{
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 24px;
+      border:none;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:700;
+      transition:.3s ease;
+      font-size:.98rem;
+    }
+    .btn-primary{
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      color:#fff;
+      box-shadow:0 12px 30px rgba(11,77,187,.24);
+    }
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-light{
+      background:#fff;
+      color:var(--primary);
+      box-shadow:var(--shadow);
+    }
+    .btn-light:hover{transform:translateY(-2px)}
+
+    /* Header */
+    header{
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:1100;
+      transition:transform .35s ease;
+    }
+    header.header-hidden{
+      transform:translateY(-120%);
+    }
+
+    .nav-wrap{
+      width:min(94%, 1280px);
+      margin:18px auto 0;
+      padding:14px 18px;
+      border-radius:22px;
+      background:rgba(255,255,255,.78);
+      backdrop-filter:blur(16px);
+      border:1px solid rgba(255,255,255,.6);
+      box-shadow:0 10px 34px rgba(10,20,40,.08);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      transition:.3s ease;
+    }
+
+    header.scrolled .nav-wrap{
+      margin-top:10px;
+      box-shadow:0 16px 40px rgba(10,20,40,.14);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand img{
+      width:48px;
+      height:48px;
+      object-fit:contain;
+      border-radius:12px;
+      background:#fff;
+      padding:4px;
+    }
+    .brand-text{min-width:0}
+    .brand-text strong{
+      display:block;
+      font-size:1rem;
+      color:var(--dark);
+      line-height:1.1;
+    }
+    .brand-text span{
+      display:block;
+      font-size:.82rem;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    nav ul{
+      display:flex;
+      align-items:center;
+      gap:26px;
+    }
+    nav a{
+      font-weight:700;
+      font-size:.96rem;
+      color:#1b2940;
+      position:relative;
+    }
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-8px;
+      width:0;height:2px;
+      background:var(--primary);
+      transition:.3s ease;
+    }
+    nav a:hover::after,
+    nav a.active::after{width:100%}
+
+    .nav-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .nav-wa{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:11px 16px;
+      border-radius:999px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:800;
+      font-size:.92rem;
+    }
+    .hamburger{
+      display:none;
+      width:48px;
+      height:48px;
+      border:none;
+      border-radius:14px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-size:1.2rem;
+      cursor:pointer;
+    }
+
+    @media (max-width: 860px){
+      header{top:0}
+      .nav-wrap{
+        width:100%;
+        margin:0;
+        border-radius:0 0 22px 22px;
+        padding:12px 14px;
+      }
+      nav{display:none}
+      .hamburger{display:inline-grid;place-items:center}
+      .nav-actions .nav-wa{display:none}
+    }
+
+    /* Mobile sidebar */
+    .sidebar-overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(3,10,24,.52);
+      backdrop-filter:blur(4px);
+      z-index:1190;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s ease;
+    }
+    .sidebar-overlay.active{
+      opacity:1;
+      visibility:visible;
+    }
+
+    .mobile-sidebar{
+      position:fixed;
+      top:0;
+      right:0;
+      width:min(88vw,380px);
+      height:100vh;
+      background:linear-gradient(180deg,#0b1730 0%, #0d2556 100%);
+      color:#fff;
+      z-index:1200;
+      transform:translateX(100%);
+      transition:transform .35s ease;
+      box-shadow:-20px 0 50px rgba(0,0,0,.22);
+      display:flex;
+      flex-direction:column;
+      overflow-y:auto;
+    }
+    .mobile-sidebar.open{transform:translateX(0)}
+    .sidebar-top{
+      padding:22px 20px 16px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .sidebar-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .sidebar-brand img{
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      background:#fff;
+      padding:4px;
+    }
+    .sidebar-brand strong{
+      display:block;
+      font-size:.98rem;
+    }
+    .sidebar-brand span{
+      display:block;
+      font-size:.8rem;
+      color:rgba(255,255,255,.72);
+    }
+    .sidebar-close{
+      width:42px;
+      height:42px;
+      border:none;
+      border-radius:12px;
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      font-size:1.1rem;
+      cursor:pointer;
+    }
+    .sidebar-body{
+      padding:20px;
+      display:grid;
+      gap:22px;
+    }
+    .sidebar-nav{
+      display:grid;
+      gap:10px;
+    }
+    .sidebar-nav a{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      color:#fff;
+      font-weight:700;
+      transition:.25s ease;
+    }
+    .sidebar-nav a:hover{
+      background:rgba(255,255,255,.12);
+      transform:translateX(4px);
+    }
+    .sidebar-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:22px;
+      padding:18px;
+    }
+    .sidebar-card h4{
+      font-size:1rem;
+      margin-bottom:12px;
+    }
+    .sidebar-card p,
+    .sidebar-card a,
+    .sidebar-card li{
+      color:rgba(255,255,255,.82);
+      font-size:.93rem;
+    }
+    .sidebar-contact{
+      display:grid;
+      gap:12px;
+    }
+    .sidebar-contact a,
+    .sidebar-contact div{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+    }
+    .sidebar-contact i{
+      color:#9fc6ff;
+      margin-top:4px;
+    }
+    .sidebar-socials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+    .sidebar-socials a{
+      width:42px;
+      height:42px;
+      display:grid;
+      place-items:center;
+      border-radius:12px;
+      background:rgba(255,255,255,.1);
+      color:#fff;
+    }
+
+    /* Hero */
+    .page-hero{
+      position:relative;
+      padding:170px 0 110px;
+      color:#fff;
+      background:
+        linear-gradient(120deg, rgba(4,18,45,.86), rgba(11,77,187,.58)),
+        url('images/slide1.jpg') center/cover no-repeat;
+      overflow:hidden;
+    }
+    .page-hero::after{
+      content:"";
+      position:absolute;
+      left:-80px;
+      bottom:-120px;
+      width:340px;
+      height:340px;
+      background:radial-gradient(circle, rgba(255,255,255,.18), transparent 70%);
+      filter:blur(10px);
+    }
+    .page-hero-content{
+      position:relative;
+      z-index:2;
+      max-width:860px;
+    }
+    .page-hero .eyebrow{
+      background:rgba(255,255,255,.14);
+      color:#fff;
+    }
+    .page-hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.7rem,5vw,4.8rem);
+      line-height:1.02;
+      margin-bottom:18px;
+    }
+    .page-hero p{
+      font-size:1.08rem;
+      color:rgba(255,255,255,.88);
+      max-width:760px;
+    }
+
+    /* Featured gallery */
+    .featured-gallery{
+      background:linear-gradient(180deg, rgba(245,249,255,.92), rgba(245,249,255,.98));
+    }
+    .feature-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .feature-main,
+    .feature-small{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      min-height:320px;
+    }
+    .feature-main{
+      min-height:560px;
+      background:
+        linear-gradient(180deg, rgba(6,20,46,.16), rgba(6,20,46,.58)),
+        url('images/land1 (2).jpg') center/cover no-repeat;
+    }
+    .feature-side{
+      display:grid;
+      gap:22px;
+    }
+    .feature-small.one{
+      background:
+        linear-gradient(180deg, rgba(7,24,56,.18), rgba(7,24,56,.44)),
+        url('images/lands2 (1).jpg') center/cover no-repeat;
+    }
+    .feature-small.two{
+      background:
+        linear-gradient(180deg, rgba(7,24,56,.18), rgba(7,24,56,.44)),
+        url('images/potrait (1).jpg') center/cover no-repeat;
+    }
+    .gallery-overlay{
+      position:absolute;
+      inset:auto 0 0 0;
+      padding:24px;
+      color:#fff;
+      background:linear-gradient(180deg, transparent, rgba(0,0,0,.62));
+    }
+    .gallery-overlay h3{
+      font-size:1.4rem;
+      margin-bottom:6px;
+    }
+    .gallery-overlay p{
+      color:rgba(255,255,255,.84);
+      font-size:.95rem;
+    }
+
+    /* Mixed gallery */
+    .mixed-gallery{
+      background:#fff;
+    }
+    .masonry-grid{
+      columns:3 280px;
+      column-gap:20px;
+    }
+    .gallery-item{
+      position:relative;
+      break-inside:avoid;
+      margin-bottom:20px;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 14px 34px rgba(10,30,70,.08);
+      background:#fff;
+    }
+    .gallery-item img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .gallery-item .item-overlay{
+      position:absolute;
+      inset:auto 0 0 0;
+      padding:18px 18px 16px;
+      background:linear-gradient(180deg, transparent, rgba(0,0,0,.68));
+      color:#fff;
+    }
+    .gallery-item h4{
+      font-size:1.05rem;
+      margin-bottom:4px;
+    }
+    .gallery-item p{
+      font-size:.9rem;
+      color:rgba(255,255,255,.82);
+    }
+
+    /* Gallery note */
+    .gallery-note{
+      margin-top:26px;
+      background:var(--primary-soft);
+      border-radius:22px;
+      padding:22px;
+      text-align:center;
+      color:var(--text);
+    }
+    .gallery-note strong{
+      display:block;
+      color:var(--primary-dark);
+      margin-bottom:6px;
+    }
+
+    /* CTA */
+    .gallery-cta{
+      position:relative;
+      color:#fff;
+      background:
+        linear-gradient(120deg, rgba(9,24,61,.90), rgba(11,77,187,.76)),
+        url('images/banner.jpeg') center/cover no-repeat;
+    }
+    .cta-wrap{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:24px;
+      align-items:center;
+    }
+    .gallery-cta h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2rem,4vw,3rem);
+      line-height:1.08;
+      margin-bottom:14px;
+    }
+    .gallery-cta p{
+      color:rgba(255,255,255,.88);
+      max-width:760px;
+    }
+
+    /* Footer */
+    footer{
+      background:#081529;
+      color:#fff;
+      padding:70px 0 26px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr .8fr 1fr;
+      gap:28px;
+      padding-bottom:34px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .footer-brand{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+    }
+    .footer-brand img{
+      width:60px;
+      height:60px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:16px;
+      padding:6px;
+    }
+    .footer-brand h3{
+      font-size:1.25rem;
+      margin-bottom:8px;
+    }
+    .footer-brand p{
+      color:rgba(255,255,255,.72);
+      font-size:.94rem;
+      max-width:360px;
+    }
+    .footer-col h4{
+      font-size:1rem;
+      margin-bottom:14px;
+      color:#fff;
+    }
+    .footer-col ul{
+      display:grid;
+      gap:10px;
+    }
+    .footer-col a{
+      color:rgba(255,255,255,.74);
+      transition:.3s ease;
+    }
+    .footer-col a:hover{color:#fff}
+    .footer-contact li{
+      color:rgba(255,255,255,.74);
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .footer-contact i{
+      color:#8ab8ff;
+      margin-top:4px;
+    }
+    .footer-bottom{
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      color:rgba(255,255,255,.62);
+      font-size:.92rem;
+    }
+    .footer-bottom a{color:#9dc4ff}
+
+    /* Floating WhatsApp */
+    .floating-wa{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#25D366;
+      color:#fff;
+      font-size:1.5rem;
+      box-shadow:0 12px 28px rgba(0,0,0,.22);
+    }
+
+    /* Responsive */
+    @media (max-width: 1080px){
+      .feature-grid,
+      .cta-wrap,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+      .feature-main{
+        min-height:460px;
+      }
+    }
+
+    @media (max-width: 860px){
+      .page-hero{
+        padding:145px 0 90px;
+      }
+      .feature-main{
+        min-height:360px;
+      }
+      .feature-small{
+        min-height:240px;
+      }
+    }
+
+    @media (max-width: 640px){
+      .section{padding:74px 0}
+      .nav-wrap{padding:12px 14px}
+      .brand-text span{display:none}
+      .mobile-sidebar{width:min(92vw,380px)}
+      .page-hero h1{
+        font-size:clamp(2.1rem,9vw,3.2rem);
+      }
+      .masonry-grid{
+        columns:1;
+      }
+      .footer-bottom{
+        flex-direction:column;
+      }
+    }
+    
+    @media (max-width: 768px){
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-col:first-child{
+    grid-column: span 2;
+  }
+
+  .footer-col:last-child{
+    grid-column: span 2;
+  }
+
+}
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+        <div class="brand-text">
+          <strong>Rhema Funeral Services</strong>
+          <span>Compassionate funeral care with dignity</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#plans">Plans</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="nav-wa" href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire.">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-brand">
+        <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+        <div>
+          <strong>Rhema Funeral Services</strong>
+          <span>Dignity. Care. Respect.</span>
+        </div>
+      </div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-body">
+      <div class="sidebar-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-users"></i> About</a>
+        <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a href="index.html#plans"><i class="fa-solid fa-file-signature"></i> Funeral Plans</a>
+        <a href="index.html#services"><i class="fa-solid fa-briefcase"></i> Services</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Contact Links</h4>
+        <div class="sidebar-contact">
+          <a href="tel:+27833394013"><i class="fa-solid fa-phone"></i><span>083 339 4013</span></a>
+          <a href="tel:+27721015385"><i class="fa-solid fa-phone"></i><span>072 101 5385</span></a>
+          <a href="mailto:info@rhemafunerals.co.za"><i class="fa-solid fa-envelope"></i><span>info@rhemafunerals.co.za</span></a>
+          <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire." target="_blank">
+            <i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="sidebar-socials">
+          <a href="https://www.facebook.com/share/16VTcPFeRb/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@rhema_funeral_services?_t=ZM-8vrCMRRxwLG&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/watch?v=uZxoAJQATSY&ab_channel=RMGVIDEOS" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Need Help Fast?</h4>
+        <p>Get immediate assistance and send your funeral plan or enquiry directly to WhatsApp.</p>
+        <div style="margin-top:14px;">
+          <a href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20need%20urgent%20assistance." target="_blank" class="btn btn-light">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="eyebrow">Gallery</span>
+          <h1>A respectful look at our presentation and service.</h1>
+          <p>
+            Explore selected moments that reflect our funeral presentation, event preparation, and the dignified service we provide to families and communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-gallery">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Featured Moments</span>
+          <h2>Highlights from our funeral setup and presentation</h2>
+          <p>
+            A curated selection of memorable service moments, respectful presentation, and professional arrangements.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-main">
+            <div class="gallery-overlay">
+              <h3>Professional setup and presentation</h3>
+              <p>Modern, organised, and dignified funeral arrangements for families and communities.</p>
+            </div>
+          </div>
+
+          <div class="feature-side">
+            <div class="feature-small one">
+              <div class="gallery-overlay">
+                <h3>Event preparation</h3>
+                <p>Structured funeral setup with care and detail.</p>
+              </div>
+            </div>
+
+            <div class="feature-small two">
+              <div class="gallery-overlay">
+                <h3>Memorable farewell moments</h3>
+                <p>Respectful and visually presentable arrangements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-note">
+          <strong>Designed for mixed image sizes</strong>
+          This gallery layout allows both tall and wide images to sit naturally together without forcing awkward labels or cropping styles.
+        </div>
+      </div>
+    </section>
+
+    <section class="section mixed-gallery">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Service Highlights</span>
+      <h2>Moments from our service, presentation, and fleet</h2>
+      <p>
+        A broader look at our funeral support, organised presentation, and professional vehicle fleet.
+      </p>
+    </div>
+
+    <div class="masonry-grid">
+      <div class="gallery-item">
+        <img src="images/land1 (2).jpg" alt="Professional funeral setup and presentation">
+        <div class="item-overlay">
+          <h4>Organised presentation</h4>
+          <p>Respectful setup for families and communities.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/potrait (1).jpg" alt="Memorable farewell arrangement">
+        <div class="item-overlay">
+          <h4>Farewell arrangement</h4>
+          <p>Elegant and visually presentable service moments.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/lands2 (1).jpg" alt="Event preparation and hearse presentation">
+        <div class="item-overlay">
+          <h4>Service preparation</h4>
+          <p>Careful planning and dignified detail.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/slide2.jpg" alt="Funeral service support">
+        <div class="item-overlay">
+          <h4>Family support</h4>
+          <p>Compassionate service in difficult moments.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/slide3.jpg" alt="Funeral presentation and arrangements">
+        <div class="item-overlay">
+          <h4>Respectful arrangements</h4>
+          <p>Professional care from planning to farewell.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/slide4.jpg" alt="Funeral setup and service atmosphere">
+        <div class="item-overlay">
+          <h4>Dignified atmosphere</h4>
+          <p>Creating meaningful and memorable ceremonies.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/new1.jpeg" alt="Rhema Funeral Services fleet vehicle lineup">
+        <div class="item-overlay">
+          <h4>Fleet presentation</h4>
+          <p>Professional vehicles prepared to serve with dignity and care.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/new2.jpeg" alt="Rhema Funeral Services fleet during service support">
+        <div class="item-overlay">
+          <h4>Reliable support fleet</h4>
+          <p>Well-presented vehicles ready for organised funeral service delivery.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/new3.jpeg" alt="Funeral support fleet lineup at sunset">
+        <div class="item-overlay">
+          <h4>Professional vehicle lineup</h4>
+          <p>Our fleet reflects order, care, and dependable service.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/new4.jpeg" alt="Lead funeral service vehicle">
+        <div class="item-overlay">
+          <h4>Lead service vehicle</h4>
+          <p>Clean, dignified transport prepared for respectful funeral arrangements.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/new5.jpeg" alt="Extended funeral fleet support">
+        <div class="item-overlay">
+          <h4>Extended fleet support</h4>
+          <p>Additional professional vehicles available for smooth service coordination.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item">
+  <img src="images/potrait (2).jpg" alt="Funeral service team in formal presentation">
+  <div class="item-overlay">
+    <h4>Professional presentation</h4>
+    <p>Well-coordinated staff presentation during a dignified service.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/potrait (3).jpg" alt="Funeral support vehicle arriving at service venue">
+  <div class="item-overlay">
+    <h4>Service arrival</h4>
+    <p>Organised vehicle arrival prepared for respectful funeral proceedings.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/potrait (4).jpg" alt="Funeral service staff standing together during ceremony">
+  <div class="item-overlay">
+    <h4>Team support</h4>
+    <p>Dedicated staff offering professional presence and care.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/potrait (5).jpg" alt="Hearse and service team during funeral coordination">
+  <div class="item-overlay">
+    <h4>Coordinated service</h4>
+    <p>Careful coordination between staff and fleet during the ceremony.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/potrait (6).jpg" alt="Funeral service attendants in formal attire">
+  <div class="item-overlay">
+    <h4>Formal attendants</h4>
+    <p>Our team maintains a respectful and polished presentation.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/potrait (7).jpg" alt="Funeral service team gathered outdoors">
+  <div class="item-overlay">
+    <h4>Community presence</h4>
+    <p>Serving families and communities with dignity and compassion.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (1).jpg" alt="Funeral fleet vehicles on the road">
+  <div class="item-overlay">
+    <h4>Fleet in motion</h4>
+    <p>Dependable transport support for smooth funeral coordination.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (3).jpg" alt="Funeral procession with support vehicles and attendees">
+  <div class="item-overlay">
+    <h4>Procession support</h4>
+    <p>Reliable service vehicles assisting during the funeral procession.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (4).jpg" alt="Funeral attendees walking alongside service vehicles">
+  <div class="item-overlay">
+    <h4>Respectful procession</h4>
+    <p>Orderly movement and support throughout the service journey.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (5).jpg" alt="Funeral service vehicle and mourners gathered at venue">
+  <div class="item-overlay">
+    <h4>Venue coordination</h4>
+    <p>Professional organisation at every stage of the funeral service.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (6).jpg" alt="Lead funeral vehicle with family and service attendants">
+  <div class="item-overlay">
+    <h4>Lead coordination</h4>
+    <p>Our team ensures every detail is handled with care and order.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/land1 (7).jpg" alt="Funeral convoy parked along the roadside">
+  <div class="item-overlay">
+    <h4>Convoy support</h4>
+    <p>Multiple vehicles available for organised and dependable service delivery.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/lands2new.jpg" alt="Casket presentation during funeral service">
+  <div class="item-overlay">
+    <h4>Honourable presentation</h4>
+    <p>Respectful casket presentation prepared with dignity and care.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/lands2 (2).jpg" alt="White funeral hearse prepared for service">
+  <div class="item-overlay">
+    <h4>Prepared hearse</h4>
+    <p>Clean and dignified transport ready for professional service.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/lands2 (3).jpg" alt="Funeral fleet lined up at night">
+  <div class="item-overlay">
+    <h4>Evening fleet support</h4>
+    <p>Our fleet remains ready to serve families whenever needed.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/lands2 (4).jpg" alt="Casket and funeral attendants during ceremony">
+  <div class="item-overlay">
+    <h4>Ceremony detail</h4>
+    <p>Every element is handled with solemn respect and professionalism.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/lands2 (5).jpg" alt="White hearse with open side door during service">
+  <div class="item-overlay">
+    <h4>Modern service vehicle</h4>
+    <p>Well-presented vehicles equipped for dignified funeral arrangements.</p>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+    <section class="section gallery-cta">
+      <div class="container cta-wrap">
+        <div>
+          <h2>Need help with funeral arrangements or plan enquiries?</h2>
+          <p>
+            Speak to Rhema Funeral Services for compassionate guidance, respectful arrangements, and quick support for families.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-light">
+            <i class="fa-solid fa-phone-volume"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Rhema Funeral Services Logo">
+            <div>
+              <h3>Rhema Funeral Services</h3>
+              <p>
+                Compassionate, dignified, and affordable funeral support for families and communities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Plans</h4>
+          <ul>
+            <li><a href="index.html#plans">Plan A</a></li>
+            <li><a href="index.html#plans">Plan B</a></li>
+            <li><a href="contact.html">Apply via WhatsApp</a></li>
+            <li><a href="index.html#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i><span>083 339 4013</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>info@rhemafunerals.co.za</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>809 Phaphazela, Malamulele, 0982</span></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/27833394013" target="_blank">Chat on WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rhema Funeral Services. All rights reserved.</p>
+        <p>Website by <a href="https://www.valoyitech.co.za/" target="_blank">Valoyitech</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa"
+     href="https://wa.me/27833394013?text=Hello%20Rhema%20Funeral%20Services%2C%20I%20would%20like%20to%20enquire."
+     target="_blank"
+     aria-label="WhatsApp Rhema Funeral Services">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const header = document.getElementById("header");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+
+      if (currentScroll > 120) {
+        if (currentScroll > lastScrollTop) {
+          header.classList.add("header-hidden");
+        } else {
+          header.classList.remove("header-hidden");
+        }
+      } else {
+        header.classList.remove("header-hidden");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const mobileSidebar = document.getElementById("mobileSidebar");
+    const sidebarOverlay = document.getElementById("sidebarOverlay");
+    const sidebarClose = document.getElementById("sidebarClose");
+
+    function openSidebar() {
+      mobileSidebar.classList.add("open");
+      sidebarOverlay.classList.add("active");
+      document.body.classList.add("menu-open");
+    }
+
+    function closeSidebar() {
+      mobileSidebar.classList.remove("open");
+      sidebarOverlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
+
+    hamburger.addEventListener("click", openSidebar);
+    sidebarClose.addEventListener("click", closeSidebar);
+    sidebarOverlay.addEventListener("click", closeSidebar);
+
+    document.querySelectorAll(".mobile-sidebar a").forEach(link => {
+      link.addEventListener("click", closeSidebar);
+    });
+  </script>
+</body>
+</html>
